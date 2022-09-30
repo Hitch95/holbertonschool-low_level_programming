@@ -1,17 +1,18 @@
 #include<stdio.h>
-#include<conio.h>
-
-void main()
+int main(void)
 {
-clrscr();
-// sizeof evaluates the size of a variable //
-printf(“TypettttSize (bytes)”);
-printf(“nCharacterttt    %d”,sizeof(char));
-printf(“nIntegertttt    %d”,sizeof(int));
-printf(“nLong intttt    %d”,sizeof(long int));
-printf(“nFloattttt    %d”,sizeof(float));
-printf(“nDoubletttt    %d”,sizeof(double));
-printf(“nLong doublettt    %d”,sizeof(long double));
-getch();
+/**
+* main - print the size of various types
+*
+* Description: prints the size of various types on the computer it is compiled
+* and run on
+*
+* Return: Always 0 (Success)
+*/
+printf("Size of a char: %d byte(s)\n", (int) sizeof(char));
+printf("Size of an int: %d byte(s)\n", (int) sizeof(int));
+printf("Size of a long int: %d byte(s)\n", (int) sizeof(long int));
+printf("Size of a long long int: %d byte(s)\n", (int) sizeof(long long int));
+printf("Size of a float: %d byte(s)\n", (int) sizeof(float));
 return (0);
 }
