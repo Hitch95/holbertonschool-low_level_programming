@@ -20,5 +20,5 @@ void lowercaseAlphabets()
 int main(void)
 {
     lowercaseAlphabets();
-    return 0;
+    return (0);
 }
