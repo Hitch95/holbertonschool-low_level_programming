@@ -1,24 +1,16 @@
-/**
- * C program to print alphabets in lowercase
- */
-#include <stdio.h>
+#include "main.h"
 /**
  * print_alphabet - Entry point
  *
  * Return: Always 0 (Success)
  */
-void lowercaseAlphabets()
+void print_alphabet(void)
 {
-    for (int alphabetChar = 97; alphabetChar <= 122; ++alphabetChar)
-        printf("%c", alphabetChar);
-    printf("\n");
-}
+	char alphabetChar;
 
-/**
- * Driver Program
- */
-int main(void)
-{
-    lowercaseAlphabets();
-    return (0);
+	for (alphabetChar = 'a'; alphabetChar <= 'z'; alphabetChar++)
+	{
+		_putchar(alphabetChar);
+	}
+	_putchar('\n');
 }
