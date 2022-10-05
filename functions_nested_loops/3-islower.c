@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _islower - Entry point
- *@c: take the integer value of the character
- * Return: Always 0 (Success)
+ * islower - Entry point
+ * take the integer value of the character
+ * Return 0 or 1
  */
 int _islower(int alphabetChar)
 {
