@@ -6,7 +6,6 @@
 int print_to_98(int n, int end)
 
 {
-	n = 0;
 	end = 98;
 
 	while (n <= end)
