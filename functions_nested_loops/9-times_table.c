@@ -1,5 +1,5 @@
 /**
- * C program to print multiplication table of a number
+ * C program to print multiplication table of 0 to 9
  */
 
 #include "main.h"
