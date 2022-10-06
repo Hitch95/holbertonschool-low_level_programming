@@ -19,6 +19,6 @@ int print_to_98(int n, int end)
 		printf("%d, ", n);
 		n--;
 	}
-
+	printf("%d\n", n);
 	return (0);
 }
