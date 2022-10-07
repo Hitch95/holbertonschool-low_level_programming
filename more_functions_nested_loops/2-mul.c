@@ -1,9 +1,12 @@
 #include "main.h"
+
 /**
- * main - check the code
- *
+ * mul - check the code;
+ * @a: take the first integer;
+ * @b: take the second integer;
  * Return: Result of the product;
  */
+
 int mul(int a, int b)
 {
 	int c;
