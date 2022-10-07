@@ -10,7 +10,7 @@ int main(void)
 {
     int i, n ;
     n = 1;
-    printf("%d", n)
+    printf("%d", n);
     for (i = 2; i <= 100; i++)
     {
 
