@@ -1,0 +1,33 @@
+#include "main.h"
+
+/**
+ * print_triangle - check the code
+ *@size: take an integer value
+ * Return: Always 0.
+ */
+
+void print_triangle(int size)
+{
+	int a, _Vide, hashTg, lastHashPerLine = size - 1;
+
+	if (size > 0)
+	{
+		for (a = 0; a < size; a++)
+		{
+			for (_Vide =  0; _Vide < lastHashPerLine; _Vide++)
+			{
+				_putchar(' ');
+			}
+			for (hashTg = lastHashPerLine; hashTg < size; hashTg++)
+			{
+				_putchar('#');
+			}
+			lastHashPerLine--;
+			_putchar('\n');
+		}
+	}
+	else
+	{
+		_putchar('\n');
+	}
+}
