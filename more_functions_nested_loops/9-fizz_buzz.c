@@ -8,9 +8,10 @@
  * Return: Always 0.
  */
 
-int main(int i, int n)
+int main(void)
 {
-	n = 1;
+	int i;
+	int n = 1;
 
 	printf("%d", n);
 	for (i = 2; i <= 100; i++)
