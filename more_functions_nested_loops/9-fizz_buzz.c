@@ -1,32 +1,34 @@
 #include "main.h"
 #include <stdio.h>
 
-
 /**
-* Description:  Resolution of FizzBuzz test;
-*/
+ * main - check the code
+ *@i: incrementation;
+ *@n: take an integer value;
+ * Return: Always 0.
+ */
 
-int main(void)
+int main(int i, int n)
 {
-    int i, n ;
-    n = 1;
-    printf("%d", n);
-    for (i = 2; i <= 100; i++)
-    {
+	n = 1;
 
-        if (i % 15 == 0)
-            printf (" FizzBuzz");
+	printf("%d", n);
+	for (i = 2; i <= 100; i++)
+	{
 
+		if (i % 15 == 0)
+			printf(" FizzBuzz");
 
-        else if (( i % 3) == 0)
-            printf(" Fizz");
+		else if ((i % 3) == 0)
+			printf(" Fizz");
 
-        else if ((i % 5) == 0)
-            printf(" Buzz");
+		else if ((i % 5) == 0)
+			printf(" Buzz");
 
-        else
-            printf(" %d", i);
-    }
-    printf("\n");
-    return (0);
+		else
+			printf(" %d", i);
+	}
+
+	printf("\n");
+	return (0);
 }
