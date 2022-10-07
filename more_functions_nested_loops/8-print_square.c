@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_square - check the code;
+ * @size: take an integer value;
+ * Return: Always 0;
+ */
+
 void print_square(int size)
 {
 	int i;
