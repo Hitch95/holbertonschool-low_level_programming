@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: 0 to 9 without 2 & 4;
+ * print_most_numbers - check the code;
+ * Return: Always 0;
  */
+
 
 void print_most_numbers(void)
 
