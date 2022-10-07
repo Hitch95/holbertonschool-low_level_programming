@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_diagonal - check the code;
+ * @n: take an integer value;
+ * Return: Always 0;
  */
+
 
 void print_diagonal(int n)
 {
