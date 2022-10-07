@@ -3,8 +3,7 @@
 
 /**
  * main - check the code
- *@i: incrementation;
- *@n: take an integer value;
+ *
  * Return: Always 0.
  */
 
