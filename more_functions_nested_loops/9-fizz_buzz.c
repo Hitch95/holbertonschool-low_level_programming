@@ -9,9 +9,9 @@
 int main(void)
 {
     int i, n ;
-    n = 100;
-
-    for (i = 1; i <= n; i++)
+    n = 1;
+    printf("%d", n)
+    for (i = 2; i <= 100; i++)
     {
 
         if (i % 15 == 0)
