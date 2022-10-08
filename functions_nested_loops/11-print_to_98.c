@@ -1,8 +1,12 @@
 #include <stdio.h>
+
 /**
- *
- *
+ * print_to_98 - check the code;
+ * @n: enter an integer value;
+ * @end: last integer we want, 98 in our case;
+ * Return: 0 (always success);
  */
+
 int print_to_98(int n, int end)
 
 {
