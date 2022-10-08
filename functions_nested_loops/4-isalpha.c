@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
- * islower - Entry point
- * take the integer value of the character
- * Return 0 or 1
+ * _isalpha - Entry point;
+ * @alphabetChar: take the integer value of the character;
+ * Return: 0 or 1 depend of the result;
  */
+
 int _isalpha(int alphabetChar)
 {
 
