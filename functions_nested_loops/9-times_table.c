@@ -1,20 +1,36 @@
 /**
- * C program to print multiplication table of 0 to 9
+ * times_table - Check the code;
+ * Return: Always 0;
  */
 
 #include "main.h"
 
 void times_table(void)
 {
-	int i;
-	int j;
+	int multiplicand, multiplier, product;
 
-	for (i = 1; i <= 10; i++)
+	for (multiplicand = 0; multiplicand <= 9; multiplicand++)
 	{
-		for (j = 0; j <= 9; j++)
+		_putchar('0');
+
+		for (multiplier = 1; multiplier <= 9; multiplier++)
 		{
-			_putchar(i * j);
+			product = multiplicand * multiplier;
+			_putchar(',');
+			_putchar(' ');
+
+			if (product <= 9)
+			{
+				_putchar(' ');
+				_putchar(product + '0');
+			}
+
+			else
+			{
+				_putchar((product / 10) + '0');
+				_putchar((product % 10) + '0');
+			}
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
