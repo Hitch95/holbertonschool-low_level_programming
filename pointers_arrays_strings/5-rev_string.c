@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - check the code;
@@ -9,25 +10,24 @@
 
 void rev_string(char *s)
 {
-	 char reverseString[500];
-	 char *stringPointer = s;
-	 char *reversePointer = reverseString;
-	 int i = -1;
+	int length, i;
+	char *begin_ptr, *end_ptr, ch;
 
-	 while(*stringPointer)
-	 {
-		 stringPointer++;
-		 i++;
-	 }
+	length = strlen(s);
 
-	 while (i >= 0)
-	 {
-		 stringPointer--;
-		 *reversePointer = *stringPointer;
-		 reversePointer++;
-		 --i;
-	 }
+	begin_ptr = s;
+	end_ptr = s;
 
-	 *reversePointer='\0';
-	 puts(reverseString);
+	for (i = 0; i < length - 1; i++)
+		end_ptr++;
+
+	for (i = 0; i < length / 2; i++)
+	{
+		ch = *end_ptr;
+		*end_ptr = *begin_ptr;
+		*begin_ptr = ch;
+
+		begin_ptr++;
+		end_ptr--;
+	}
 }
