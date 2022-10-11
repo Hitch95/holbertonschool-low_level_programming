@@ -9,24 +9,25 @@
 
 void rev_string(char *s)
 {
-	 char revstr[10];
-	 char *stptr = s;
-	 char *rvptr = revstr;
+	 char reverseString[500];
+	 char *stringPointer = s;
+	 char *reversePointer = reverseString;
 	 int i = -1;
 
-	 while(*stptr)
+	 while(*stringPointer)
 	 {
-		 stptr++;
+		 stringPointer++;
 		 i++;
 	 }
 
 	 while (i >= 0)
 	 {
-		 stptr--;
-		 *rvptr = *stptr;
-		 rvptr++;
+		 stringPointer--;
+		 *reversePointer = *stringPointer;
+		 reversePointer++;
 		 --i;
 	 }
 
-	 *rvptr='\0';
+	 *reversePointer='\0';
+	 puts(reverseString);
 }
