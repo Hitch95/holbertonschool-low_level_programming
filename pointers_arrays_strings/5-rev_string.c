@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * main - check the code;
+ * rev_string - check the code;
  * @s: Enter a string as value;
  * Return: Always 0;
  */
