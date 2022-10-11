@@ -29,5 +29,4 @@ void rev_string(char *s)
 	 }
 
 	 *rvptr='\0';
-	 puts(revstr);
 }
