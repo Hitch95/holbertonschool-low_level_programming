@@ -3,8 +3,9 @@
 #include <string.h>
 
 /**
- * *string_toupper - check the code
- * Return: Always 0.
+ * *string_toupper - Check the code;
+ * @str: String value;
+ * Return: Always 0;
  */
 
 char *string_toupper(char *str)
