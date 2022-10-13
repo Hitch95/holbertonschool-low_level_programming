@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @s: memory area destination
- * @b: constant byte
- * @n: length of byte memory area
- * Return: Nothing.
+ * *_memset - fills memory with a constant byte;
+ * @s: memory area to be filled;
+ * @b: char to copy;
+ * @n: number of times to copy b;
+ * Return: pointer to the memory area s;
  */
 
 char *_memset(char *s, char b, unsigned int n)
