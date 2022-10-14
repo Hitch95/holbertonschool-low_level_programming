@@ -13,13 +13,16 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
-
 	char *source_char = (char *)src;
 	char *destination_char = (char *)dest;
 
-	for (i = 0; i < n; i++)
-		destination_char[i] = source_char[i];
-
+	if ((destination_char != NULL) && (source_char != NULL))
+	{
+		while (n)
+		{
+			*(destination_char++) = *(source_char++);
+			--n;
+		}
+	}
 	return (0);
 }
