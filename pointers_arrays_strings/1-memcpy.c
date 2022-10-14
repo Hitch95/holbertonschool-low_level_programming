@@ -13,8 +13,8 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	char *source_char = (char *)src;
-	char *destination_char = (char *)dest;
+	char *destination_char = (char *) dest;
+	const char *source_char = (const char*) src;
 
 	if ((destination_char != NULL) && (source_char != NULL))
 	{
@@ -24,4 +24,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 			--n;
 		}
 	}
+	return (dest);
 }
