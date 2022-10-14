@@ -14,7 +14,7 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *destination_char = (char *) dest;
-	const char *source_char = (const char*) src;
+	const char *source_char = (const char *) src;
 
 	if ((destination_char != NULL) && (source_char != NULL))
 	{
